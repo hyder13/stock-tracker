@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股小助手 - 每日股價記錄</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --accent: #10b981;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .controls {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        input {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 10px 14px;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus {
+            border-color: var(--primary);
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        th {
+            text-align: left;
+            color: var(--text-muted);
+            font-weight: 400;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 16px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .symbol {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .name {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .price-input {
+            width: 120px;
+            font-family: monospace;
+        }
+
+        .history-section {
+            margin-top: 40px;
+        }
+
+        .history-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+        }
+
+        .history-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        .source-auto { color: var(--accent); }
+        .source-manual { color: var(--text-muted); }
+
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>📈 美股小助手</h1>
+        <p style="color: var(--text-muted);">追蹤每日關鍵個股價</p>
+    </header>
+
+    <div class="card">
+        <div class="controls">
+            <div class="input-group">
+                <label>選擇日期</label>
+                <input type="date" id="record-date">
+            </div>
+            <button class="btn" onclick="saveData()">儲存手動紀錄</button>
+        </div>
+
+        <table id="stock-table">
+            <thead>
+                <tr>
+                    <th>個股</th>
+                    <th>目前股價 (USD)</th>
+                </tr>
+            </thead>
+            <tbody id="stock-body">
+                <!-- 由 JS 生成 -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="history-section">
+        <h3 style="margin-bottom: 16px;">最近 30 天紀錄</h3>
+        <div id="history-list" class="history-list">
+            <!-- 由 JS 生成 -->
+        </div>
+    </div>
+
+    <div class="footer">
+        由 小U 🦉 為 Roy 製作 · 資料自動同步自 GitHub Actions
+    </div>
+</div>
+
+<script>
+    const STOCKS = [
+        { symbol: 'AAPL', name: 'Apple' },
+        { symbol: 'NVDA', name: 'NVIDIA' },
+        { symbol: 'TSLA', name: 'Tesla' },
+        { symbol: 'GOOGL', name: 'Alphabet' },
+        { symbol: 'MSFT', name: 'Microsoft' },
+        { symbol: 'AMZN', name: 'Amazon' }
+    ];
+
+    const dateInput = document.getElementById('record-date');
+    const stockBody = document.getElementById('stock-body');
+    const historyList = document.getElementById('history-list');
+
+    dateInput.valueAsDate = new Date();
+    dateInput.addEventListener('change', loadDataForDate);
+
+    let externalData = {};
+
+    // 生成表格
+    STOCKS.forEach(stock => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>
+                <div class="symbol">${stock.symbol}</div>
+                <div class="name">${stock.name}</div>
+            </td>
+            <td>
+                <input type="number" step="0.01" class="price-input" data-symbol="${stock.symbol}" placeholder="---">
+            </td>
+        `;
+        stockBody.appendChild(tr);
+    });
+
+    async function fetchExternalData() {
+        try {
+            const response = await fetch('stock_data.json');
+            if (response.ok) {
+                externalData = await response.json();
+            }
+        } catch (e) {
+            console.log('未找到外部數據');
+        }
+        updateHistory();
+        loadDataForDate();
+    }
+
+    function saveData() {
+        const date = dateInput.value;
+        if (!date) return;
+        const data = {};
+        document.querySelectorAll('.price-input').forEach(input => {
+            data[input.dataset.symbol] = input.value;
+        });
+        localStorage.setItem(`stock_price_${date}`, JSON.stringify(data));
+        alert(`已儲存 ${date} 的紀錄`);
+        updateHistory();
+    }
+
+    function loadDataForDate() {
+        const date = dateInput.value;
+        document.querySelectorAll('.price-input').forEach(input => { input.value = ''; });
+
+        if (externalData[date]) {
+            const data = externalData[date];
+            document.querySelectorAll('.price-input').forEach(input => {
+                if (data[input.dataset.symbol]) input.value = data[input.dataset.symbol];
+            });
+        } else {
+            const saved = localStorage.getItem(`stock_price_${date}`);
+            if (saved) {
+                const data = JSON.parse(saved);
+                document.querySelectorAll('.price-input').forEach(input => {
+                    if (data[input.dataset.symbol]) input.value = data[input.dataset.symbol];
+                });
+            }
+        }
+    }
+
+    function updateHistory() {
+        const allDates = new Set(Object.keys(externalData));
+        for (let i = 0; i < 30; i++) {
+            const d = new Date();
+            d.setDate(d.getDate() - i);
+            const dateStr = d.toISOString().split('T')[0];
+            if (localStorage.getItem(`stock_price_${dateStr}`)) allDates.add(dateStr);
+        }
+        
+        const sortedDates = Array.from(allDates).sort().reverse();
+        historyList.innerHTML = '';
+        
+        sortedDates.forEach(dateStr => {
+            const div = document.createElement('div');
+            div.className = 'history-item';
+            const source = externalData[dateStr] ? '<span class="source-auto">自動</span>' : '<span class="source-manual">手動</span>';
+            div.innerHTML = `<div>${dateStr}</div><div>${source}</div>`;
+            historyList.appendChild(div);
+        });
+    }
+
+    fetchExternalData();
+</script>
+
+</body>
+</html>

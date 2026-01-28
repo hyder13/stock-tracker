@@ -3,314 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股小助手 - 每日股價記錄</title>
+    <title>小U 股市導航儀</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-        
         :root {
-            --primary: #6366f1;
-            --primary-hover: #4f46e5;
             --bg: #0f172a;
-            --card-bg: #1e293b;
+            --card: #1e293b;
+            --accent: #38bdf8;
             --text: #f1f5f9;
             --text-muted: #94a3b8;
+            --up: #10b981;
+            --down: #ef4444;
             --border: #334155;
-            --accent: #10b981;
         }
-
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, sans-serif;
             background-color: var(--bg);
             color: var(--text);
             margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
+            padding: 20px;
         }
-
         .container {
-            width: 100%;
             max-width: 900px;
+            margin: 0 auto;
         }
-
         header {
             text-align: center;
             margin-bottom: 40px;
         }
-
         h1 {
+            color: var(--accent);
             font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            background: linear-gradient(to right, #818cf8, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
         }
-
+        .last-update {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .stock-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .stock-grid { grid-template-columns: 1fr 1fr; }
+        }
         .card {
-            background: var(--card-bg);
+            background: var(--card);
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 24px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, border-color 0.2s;
         }
-
-        .controls {
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+        .card-header {
             display: flex;
-            gap: 16px;
-            margin-bottom: 24px;
-            align-items: flex-end;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
         }
-
-        .input-group {
+        .symbol-box {
             display: flex;
             flex-direction: column;
-            gap: 8px;
         }
-
-        label {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        input {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            color: var(--text);
-            padding: 10px 14px;
-            border-radius: 8px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        input:focus {
-            border-color: var(--primary);
-        }
-
-        .btn {
-            background: var(--primary);
-            color: white;
-            padding: 10px 24px;
-            border-radius: 8px;
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .btn:hover {
-            background: var(--primary-hover);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 16px;
-        }
-
-        th {
-            text-align: left;
-            color: var(--text-muted);
-            font-weight: 400;
-            padding: 12px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        td {
-            padding: 16px 12px;
-            border-bottom: 1px solid var(--border);
-        }
-
         .symbol {
-            font-weight: 600;
+            font-size: 1.4rem;
+            font-weight: 800;
             color: var(--accent);
         }
-
         .name {
+            font-size: 0.9rem;
             color: var(--text-muted);
-            font-size: 0.875rem;
         }
-
-        .price-input {
-            width: 120px;
-            font-family: monospace;
+        .market-badge {
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: var(--border);
+            color: var(--text-muted);
+            margin-top: 4px;
+            width: fit-content;
         }
-
-        .history-section {
-            margin-top: 40px;
+        .price-box {
+            text-align: right;
         }
-
-        .history-list {
+        .price {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .change {
+            font-weight: 600;
+        }
+        .summary {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            height: 60px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        .analysis-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 12px;
-        }
-
-        .history-item {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
+            background: rgba(0,0,0,0.2);
             padding: 12px;
             border-radius: 8px;
-            font-size: 0.875rem;
-            text-align: center;
+            margin-bottom: 16px;
         }
-
-        .source-auto { color: var(--accent); }
-        .source-manual { color: var(--text-muted); }
-
-        .footer {
-            margin-top: 60px;
-            text-align: center;
+        .analysis-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .label {
+            font-size: 0.7rem;
             color: var(--text-muted);
-            font-size: 0.875rem;
+            text-transform: uppercase;
         }
+        .val {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .u-insight {
+            background: rgba(56, 189, 248, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+        .up-text { color: var(--up); }
+        .down-text { color: var(--down); }
     </style>
 </head>
 <body>
-
 <div class="container">
     <header>
-        <h1>📈 美股小助手</h1>
-        <p style="color: var(--text-muted);">追蹤每日關鍵個股價</p>
+        <h1>🦉 小U 股市導航儀</h1>
+        <p>台美股同步追蹤 · 機構分析彙整 · 小U 獨家建議</p>
+        <div id="update-time" class="last-update">同步中...</div>
     </header>
-
-    <div class="card">
-        <div class="controls">
-            <div class="input-group">
-                <label>選擇日期</label>
-                <input type="date" id="record-date">
-            </div>
-            <button class="btn" onclick="saveData()">儲存手動紀錄</button>
-        </div>
-
-        <table id="stock-table">
-            <thead>
-                <tr>
-                    <th>個股</th>
-                    <th>目前股價 (USD)</th>
-                </tr>
-            </thead>
-            <tbody id="stock-body">
-                <!-- 由 JS 生成 -->
-            </tbody>
-        </table>
-    </div>
-
-    <div class="history-section">
-        <h3 style="margin-bottom: 16px;">最近 30 天紀錄</h3>
-        <div id="history-list" class="history-list">
-            <!-- 由 JS 生成 -->
-        </div>
-    </div>
-
-    <div class="footer">
-        由 小U 🦉 為 Roy 製作 · 資料自動同步自 GitHub Actions
+    <div id="stock-list" class="stock-grid">
+        <!-- 載入中動畫或提示 -->
     </div>
 </div>
 
 <script>
-    const STOCKS = [
-        { symbol: 'AAPL', name: 'Apple' },
-        { symbol: 'NVDA', name: 'NVIDIA' },
-        { symbol: 'TSLA', name: 'Tesla' },
-        { symbol: 'GOOGL', name: 'Alphabet' },
-        { symbol: 'MSFT', name: 'Microsoft' },
-        { symbol: 'AMZN', name: 'Amazon' }
-    ];
-
-    const dateInput = document.getElementById('record-date');
-    const stockBody = document.getElementById('stock-body');
-    const historyList = document.getElementById('history-list');
-
-    dateInput.valueAsDate = new Date();
-    dateInput.addEventListener('change', loadDataForDate);
-
-    let externalData = {};
-
-    // 生成表格
-    STOCKS.forEach(stock => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-            <td>
-                <div class="symbol">${stock.symbol}</div>
-                <div class="name">${stock.name}</div>
-            </td>
-            <td>
-                <input type="number" step="0.01" class="price-input" data-symbol="${stock.symbol}" placeholder="---">
-            </td>
-        `;
-        stockBody.appendChild(tr);
-    });
-
-    async function fetchExternalData() {
+    async function fetchStocks() {
         try {
             const response = await fetch('stock_data.json');
-            if (response.ok) {
-                externalData = await response.json();
-            }
-        } catch (e) {
-            console.log('未找到外部數據');
-        }
-        updateHistory();
-        loadDataForDate();
-    }
+            const data = await response.json();
+            
+            document.getElementById('update-time').innerText = `最後同步時間: ${data.last_updated}`;
+            const list = document.getElementById('stock-list');
+            list.innerHTML = '';
 
-    function saveData() {
-        const date = dateInput.value;
-        if (!date) return;
-        const data = {};
-        document.querySelectorAll('.price-input').forEach(input => {
-            data[input.dataset.symbol] = input.value;
-        });
-        localStorage.setItem(`stock_price_${date}`, JSON.stringify(data));
-        alert(`已儲存 ${date} 的紀錄`);
-        updateHistory();
-    }
-
-    function loadDataForDate() {
-        const date = dateInput.value;
-        document.querySelectorAll('.price-input').forEach(input => { input.value = ''; });
-
-        if (externalData[date]) {
-            const data = externalData[date];
-            document.querySelectorAll('.price-input').forEach(input => {
-                if (data[input.dataset.symbol]) input.value = data[input.dataset.symbol];
+            data.stocks.forEach(s => {
+                const isUp = s.change >= 0;
+                const changeClass = isUp ? 'up-text' : 'down-text';
+                const sign = isUp ? '+' : '';
+                
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="symbol-box">
+                            <span class="symbol">${s.symbol}</span>
+                            <span class="name">${s.name}</span>
+                            <span class="market-badge">${s.market}</span>
+                        </div>
+                        <div class="price-box">
+                            <div class="price">${s.market === '台股' ? 'NT$' : '$'}${s.price}</div>
+                            <div class="change ${changeClass}">${sign}${s.change}%</div>
+                        </div>
+                    </div>
+                    <div class="summary">${s.summary}</div>
+                    <div class="analysis-grid">
+                        <div class="analysis-item">
+                            <span class="label">分析師評價</span>
+                            <span class="val">${s.recommendation}</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">目標價</span>
+                            <span class="val">${s.target_price ? (s.market === '台股' ? 'NT$' : '$') + s.target_price.toFixed(2) : '--'}</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">機構持股</span>
+                            <span class="val">${s.inst_pct}%</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">樣本數</span>
+                            <span class="val">${s.analyst_count} 位分析師</span>
+                        </div>
+                    </div>
+                    <div class="u-insight">
+                        <strong>🦉 小U 指南：</strong><br>${s.evaluation}
+                    </div>
+                `;
+                list.appendChild(card);
             });
-        } else {
-            const saved = localStorage.getItem(`stock_price_${date}`);
-            if (saved) {
-                const data = JSON.parse(saved);
-                document.querySelectorAll('.price-input').forEach(input => {
-                    if (data[input.dataset.symbol]) input.value = data[input.dataset.symbol];
-                });
-            }
+        } catch (e) {
+            document.getElementById('stock-list').innerHTML = '<p>資料讀取中，請稍候重整...</p>';
         }
     }
-
-    function updateHistory() {
-        const allDates = new Set(Object.keys(externalData));
-        for (let i = 0; i < 30; i++) {
-            const d = new Date();
-            d.setDate(d.getDate() - i);
-            const dateStr = d.toISOString().split('T')[0];
-            if (localStorage.getItem(`stock_price_${dateStr}`)) allDates.add(dateStr);
-        }
-        
-        const sortedDates = Array.from(allDates).sort().reverse();
-        historyList.innerHTML = '';
-        
-        sortedDates.forEach(dateStr => {
-            const div = document.createElement('div');
-            div.className = 'history-item';
-            const source = externalData[dateStr] ? '<span class="source-auto">自動</span>' : '<span class="source-manual">手動</span>';
-            div.innerHTML = `<div>${dateStr}</div><div>${source}</div>`;
-            historyList.appendChild(div);
-        });
-    }
-
-    fetchExternalData();
+    fetchStocks();
+    setInterval(fetchStocks, 60000);
 </script>
-
 </body>
 </html>

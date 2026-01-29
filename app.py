@@ -4,10 +4,13 @@ import yfinance as yf
 import json
 import os
 import time
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 app = Flask(__name__, static_folder='.')
 CORS(app)
+
+# 設定台灣時區 (UTC+8)
+TW_TZ = timezone(timedelta(hours=8))
 
 DATA_FILE = "stock_data.json"
 CACHE_SECONDS = 300 # 5 分鐘
@@ -76,7 +79,7 @@ def update_cache():
         time.sleep(0.5)
     
     output = {
-        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "last_updated": datetime.now(TW_TZ).strftime("%Y-%m-%d %H:%M:%S"),
         "stocks": results
     }
     with open(DATA_FILE, "w", encoding='utf-8') as f:

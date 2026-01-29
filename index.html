@@ -156,7 +156,8 @@
 <script>
     async function fetchStocks() {
         try {
-            const response = await fetch('stock_data.json');
+            // 自動判斷 API 位置，支援雲端與在地
+            const response = await fetch('/api/stocks');
             const data = await response.json();
             
             document.getElementById('update-time').innerText = `最後同步時間: ${data.last_updated}`;

@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-01-31 00:57:24",
+    "last_updated": "2026-02-01 01:10:34",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -20,7 +20,7 @@
             "price": 430.41,
             "change": 3.32,
             "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, Chin...",
-            "target_price": 413.1235,
+            "target_price": 415.8735,
             "recommendation": "Buy",
             "analyst_count": 40,
             "inst_pct": 44.4,
@@ -46,11 +46,11 @@
             "price": 259.48,
             "change": 0.46,
             "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhon...",
-            "target_price": 287.1445,
+            "target_price": 288.92126,
             "recommendation": "Buy",
             "analyst_count": 40,
-            "inst_pct": 64.8,
-            "evaluation": "價格接近合理區間，目標價 $287.1445。",
+            "inst_pct": 64.9,
+            "evaluation": "價格接近合理區間，目標價 $288.92126。",
             "market": "美股"
         },
         {
@@ -62,7 +62,7 @@
             "target_price": 289.22803,
             "recommendation": "Buy",
             "analyst_count": 46,
-            "inst_pct": 70.1,
+            "inst_pct": 70.5,
             "evaluation": "分析師看好潛在漲幅 22.2%，建議分批買進。",
             "market": "美股"
         },
@@ -75,7 +75,7 @@
             "target_price": 337.4626,
             "recommendation": "Buy",
             "analyst_count": 31,
-            "inst_pct": 67.1,
+            "inst_pct": 66.9,
             "evaluation": "分析師看好潛在漲幅 73.3%，建議分批買進。",
             "market": "美股"
         },
@@ -85,11 +85,11 @@
             "price": 1775.0,
             "change": -1.66,
             "summary": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and o...",
-            "target_price": 2181.037,
+            "target_price": 2195.3228,
             "recommendation": "Strong Buy",
             "analyst_count": 35,
             "inst_pct": 41.9,
-            "evaluation": "分析師看好潛在漲幅 22.9%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 23.7%，建議分批買進。",
             "market": "台股"
         },
         {

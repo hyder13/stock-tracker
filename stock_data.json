@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-01 01:10:34",
+    "last_updated": "2026-02-02 01:03:19",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -7,11 +7,11 @@
             "price": 191.13,
             "change": -0.72,
             "summary": "NVIDIA Corporation, a computing infrastructure company, provides graphics and compute and networking solutions in the United States, Singapore, Taiwan...",
-            "target_price": 253.19034,
+            "target_price": 253.62138,
             "recommendation": "Strong Buy",
             "analyst_count": 58,
             "inst_pct": 69.6,
-            "evaluation": "分析師看好潛在漲幅 32.5%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 32.7%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -20,9 +20,9 @@
             "price": 430.41,
             "change": 3.32,
             "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, Chin...",
-            "target_price": 415.8735,
+            "target_price": 418.89078,
             "recommendation": "Buy",
-            "analyst_count": 40,
+            "analyst_count": 39,
             "inst_pct": 44.4,
             "evaluation": "目前價格已高於分析師平均目標價，建議觀望或適度止盈。",
             "market": "美股"
@@ -46,11 +46,11 @@
             "price": 259.48,
             "change": 0.46,
             "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhon...",
-            "target_price": 288.92126,
+            "target_price": 290.89624,
             "recommendation": "Buy",
             "analyst_count": 40,
             "inst_pct": 64.9,
-            "evaluation": "價格接近合理區間，目標價 $288.92126。",
+            "evaluation": "價格接近合理區間，目標價 $290.89624。",
             "market": "美股"
         },
         {

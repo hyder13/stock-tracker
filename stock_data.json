@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-14 01:01:04",
+    "last_updated": "2026-02-15 01:06:55",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -7,11 +7,11 @@
             "price": 182.81,
             "change": -2.21,
             "summary": "NVIDIA Corporation, a computing infrastructure company, provides graphics and compute and networking solutions in the United States, Singapore, Taiwan...",
-            "target_price": 253.7938,
+            "target_price": 253.88464,
             "recommendation": "Strong Buy",
-            "analyst_count": 58,
-            "inst_pct": 69.4,
-            "evaluation": "分析師看好潛在漲幅 38.8%，建議分批買進。",
+            "analyst_count": 56,
+            "inst_pct": 69.8,
+            "evaluation": "分析師看好潛在漲幅 38.9%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -23,7 +23,7 @@
             "target_price": 421.729,
             "recommendation": "Hold",
             "analyst_count": 40,
-            "inst_pct": 44.5,
+            "inst_pct": 44.6,
             "evaluation": "價格接近合理區間，目標價 $421.729。",
             "market": "美股"
         },
@@ -36,7 +36,7 @@
             "target_price": 402.3846,
             "recommendation": "Strong Buy",
             "analyst_count": 13,
-            "inst_pct": 61.0,
+            "inst_pct": 60.5,
             "evaluation": "分析師看好潛在漲幅 200.6%，建議分批買進。",
             "market": "美股"
         },
@@ -46,11 +46,11 @@
             "price": 255.78,
             "change": -2.27,
             "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhon...",
-            "target_price": 293.06952,
+            "target_price": 292.14624,
             "recommendation": "Buy",
-            "analyst_count": 41,
-            "inst_pct": 65.4,
-            "evaluation": "價格接近合理區間，目標價 $293.06952。",
+            "analyst_count": 40,
+            "inst_pct": 65.5,
+            "evaluation": "價格接近合理區間，目標價 $292.14624。",
             "market": "美股"
         },
         {
@@ -59,10 +59,10 @@
             "price": 207.32,
             "change": 0.67,
             "summary": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally. It operates in three segments: Data Center, Client and Gaming, and E...",
-            "target_price": 287.04254,
+            "target_price": 287.19565,
             "recommendation": "Buy",
-            "analyst_count": 47,
-            "inst_pct": 71.7,
+            "analyst_count": 46,
+            "inst_pct": 71.2,
             "evaluation": "分析師看好潛在漲幅 38.5%，建議分批買進。",
             "market": "美股"
         },
@@ -71,12 +71,12 @@
             "name": "Coinbase Global, Inc. - 3",
             "price": 164.32,
             "change": 16.46,
-            "summary": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally. It offers the primary financial account in the cry...",
-            "target_price": 289.04468,
+            "summary": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally. It provides the primary financial account in the c...",
+            "target_price": 279.87378,
             "recommendation": "Buy",
-            "analyst_count": 30,
-            "inst_pct": 67.8,
-            "evaluation": "分析師看好潛在漲幅 75.9%，建議分批買進。",
+            "analyst_count": 29,
+            "inst_pct": 70.5,
+            "evaluation": "分析師看好潛在漲幅 70.3%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -85,11 +85,11 @@
             "price": 1915.0,
             "change": 1.86,
             "summary": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and o...",
-            "target_price": 2247.1853,
+            "target_price": 2223.4636,
             "recommendation": "Strong Buy",
-            "analyst_count": 34,
+            "analyst_count": 33,
             "inst_pct": 41.9,
-            "evaluation": "分析師看好潛在漲幅 17.3%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 16.1%，建議分批買進。",
             "market": "台股"
         },
         {
@@ -140,7 +140,7 @@
             "target_price": 350.6111,
             "recommendation": "Buy",
             "analyst_count": 18,
-            "inst_pct": 25.2,
+            "inst_pct": 25.1,
             "evaluation": "分析師看好潛在漲幅 22.6%，建議分批買進。",
             "market": "台股"
         }

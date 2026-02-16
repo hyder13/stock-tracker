@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-02-15 01:06:55",
+    "last_updated": "2026-02-16 01:04:48",
     "stocks": [
         {
             "symbol": "NVDA",
             "name": "NVIDIA Corporation",
-            "price": 182.81,
-            "change": -2.21,
+            "price": 182.78,
+            "change": -2.24,
             "summary": "NVIDIA Corporation, a computing infrastructure company, provides graphics and compute and networking solutions in the United States, Singapore, Taiwan...",
             "target_price": 253.88464,
             "recommendation": "Strong Buy",
@@ -72,11 +72,11 @@
             "price": 164.32,
             "change": 16.46,
             "summary": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally. It provides the primary financial account in the c...",
-            "target_price": 279.87378,
+            "target_price": 278.49448,
             "recommendation": "Buy",
             "analyst_count": 29,
             "inst_pct": 70.5,
-            "evaluation": "分析師看好潛在漲幅 70.3%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 69.5%，建議分批買進。",
             "market": "美股"
         },
         {

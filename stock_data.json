@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-16 01:04:48",
+    "last_updated": "2026-02-17 01:03:21",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -72,11 +72,11 @@
             "price": 164.32,
             "change": 16.46,
             "summary": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally. It provides the primary financial account in the c...",
-            "target_price": 278.49448,
+            "target_price": 273.6669,
             "recommendation": "Buy",
             "analyst_count": 29,
             "inst_pct": 70.5,
-            "evaluation": "分析師看好潛在漲幅 69.5%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 66.5%，建議分批買進。",
             "market": "美股"
         },
         {

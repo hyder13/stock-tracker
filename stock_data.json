@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-28 00:55:26",
+    "last_updated": "2026-03-01 01:09:11",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -7,11 +7,11 @@
             "price": 177.19,
             "change": -4.16,
             "summary": "NVIDIA Corporation, a computing infrastructure company, provides graphics and compute and networking solutions in the United States, Taiwan, China, Ho...",
-            "target_price": 262.50742,
+            "target_price": 263.38672,
             "recommendation": "Strong Buy",
             "analyst_count": 58,
-            "inst_pct": 69.6,
-            "evaluation": "分析師看好潛在漲幅 48.2%，建議分批買進。",
+            "inst_pct": 69.7,
+            "evaluation": "分析師看好潛在漲幅 48.6%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -101,7 +101,7 @@
             "target_price": 300.33334,
             "recommendation": "Buy",
             "analyst_count": 18,
-            "inst_pct": 26.6,
+            "inst_pct": 26.7,
             "evaluation": "分析師看好潛在漲幅 23.6%，建議分批買進。",
             "market": "台股"
         },
@@ -114,7 +114,7 @@
             "target_price": 211.375,
             "recommendation": "Hold",
             "analyst_count": 8,
-            "inst_pct": 26.1,
+            "inst_pct": 25.5,
             "evaluation": "價格接近合理區間，目標價 $211.375。",
             "market": "台股"
         },

@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-03 01:11:30",
+    "last_updated": "2026-04-04 01:05:43",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -20,11 +20,11 @@
             "price": 360.59,
             "change": -5.42,
             "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, Chin...",
-            "target_price": 418.83316,
+            "target_price": 417.07706,
             "recommendation": "Buy",
             "analyst_count": 41,
             "inst_pct": 44.7,
-            "evaluation": "分析師看好潛在漲幅 16.2%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 15.7%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -36,7 +36,7 @@
             "target_price": 374.07144,
             "recommendation": "Strong Buy",
             "analyst_count": 14,
-            "inst_pct": 56.3,
+            "inst_pct": 56.4,
             "evaluation": "分析師看好潛在漲幅 212.2%，建議分批買進。",
             "market": "美股"
         },
@@ -49,7 +49,7 @@
             "target_price": 295.07126,
             "recommendation": "Buy",
             "analyst_count": 40,
-            "inst_pct": 65.2,
+            "inst_pct": 65.3,
             "evaluation": "分析師看好潛在漲幅 15.3%，建議分批買進。",
             "market": "美股"
         },
@@ -72,11 +72,11 @@
             "price": 171.46,
             "change": -0.88,
             "summary": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally. It provides the primary financial account in the c...",
-            "target_price": 247.24277,
+            "target_price": 241.66447,
             "recommendation": "Buy",
             "analyst_count": 29,
             "inst_pct": 69.0,
-            "evaluation": "分析師看好潛在漲幅 44.2%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 40.9%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -85,11 +85,11 @@
             "price": 1810.0,
             "change": -2.43,
             "summary": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and o...",
-            "target_price": 2315.6562,
+            "target_price": 2317.606,
             "recommendation": "Strong Buy",
-            "analyst_count": 32,
+            "analyst_count": 33,
             "inst_pct": 42.0,
-            "evaluation": "分析師看好潛在漲幅 27.9%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 28.0%，建議分批買進。",
             "market": "台股"
         },
         {
@@ -114,7 +114,7 @@
             "target_price": 237.625,
             "recommendation": "Buy",
             "analyst_count": 8,
-            "inst_pct": 24.8,
+            "inst_pct": 24.7,
             "evaluation": "分析師看好潛在漲幅 17.3%，建議分批買進。",
             "market": "台股"
         },

@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-11 01:09:28",
+    "last_updated": "2026-04-12 01:18:31",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -33,11 +33,11 @@
             "price": 128.64,
             "change": -0.17,
             "summary": "Strategy Inc, together with its subsidiaries, operates as a bitcoin treasury company in the United States, Europe, the Middle East, Africa, and intern...",
-            "target_price": 374.07144,
+            "target_price": 367.64285,
             "recommendation": "Strong Buy",
             "analyst_count": 14,
             "inst_pct": 56.7,
-            "evaluation": "分析師看好潛在漲幅 190.8%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 185.8%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -46,11 +46,11 @@
             "price": 260.48,
             "change": -0.0,
             "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhon...",
-            "target_price": 296.12125,
+            "target_price": 296.3305,
             "recommendation": "Buy",
             "analyst_count": 40,
             "inst_pct": 65.3,
-            "evaluation": "價格接近合理區間，目標價 $296.12125。",
+            "evaluation": "價格接近合理區間，目標價 $296.3305。",
             "market": "美股"
         },
         {
@@ -72,11 +72,11 @@
             "price": 167.85,
             "change": -0.69,
             "summary": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally. It provides the primary financial account in the c...",
-            "target_price": 239.4576,
+            "target_price": 237.90585,
             "recommendation": "Buy",
             "analyst_count": 29,
             "inst_pct": 69.1,
-            "evaluation": "分析師看好潛在漲幅 42.7%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 41.7%，建議分批買進。",
             "market": "美股"
         },
         {

@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-18 01:12:24",
+    "last_updated": "2026-04-19 01:21:00",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -59,11 +59,11 @@
             "price": 278.39,
             "change": 0.05,
             "summary": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally. It operates in three segments: Data Center, Client and Gaming, and E...",
-            "target_price": 290.0,
+            "target_price": 291.52173,
             "recommendation": "Buy",
             "analyst_count": 46,
             "inst_pct": 72.2,
-            "evaluation": "價格接近合理區間，目標價 $290.0。",
+            "evaluation": "價格接近合理區間，目標價 $291.52173。",
             "market": "美股"
         },
         {
@@ -85,11 +85,11 @@
             "price": 2030.0,
             "change": -2.64,
             "summary": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and o...",
-            "target_price": 2368.5151,
+            "target_price": 2497.1516,
             "recommendation": "Strong Buy",
             "analyst_count": 33,
             "inst_pct": 41.8,
-            "evaluation": "分析師看好潛在漲幅 16.7%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 23.0%，建議分批買進。",
             "market": "台股"
         },
         {
@@ -124,11 +124,11 @@
             "price": 136.5,
             "change": 1.87,
             "summary": "Wistron Corporation, together with its subsidiaries, engages in the design, manufacture, and sale of information technology products in the United Sta...",
-            "target_price": 192.38461,
+            "target_price": 191.14285,
             "recommendation": "Buy",
-            "analyst_count": 13,
+            "analyst_count": 14,
             "inst_pct": 33.0,
-            "evaluation": "分析師看好潛在漲幅 40.9%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 40.0%，建議分批買進。",
             "market": "台股"
         },
         {
@@ -137,11 +137,11 @@
             "price": 323.0,
             "change": 1.41,
             "summary": "Quanta Computer Inc. manufactures, processes, and sells laptop computers and telecommunication products in the United States, Mainland China, the Neth...",
-            "target_price": 362.78946,
+            "target_price": 364.3684,
             "recommendation": "Buy",
             "analyst_count": 19,
             "inst_pct": 25.7,
-            "evaluation": "價格接近合理區間，目標價 $362.78946。",
+            "evaluation": "價格接近合理區間，目標價 $364.3684。",
             "market": "台股"
         }
     ]

@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-02 01:26:26",
+    "last_updated": "2026-05-03 01:30:01",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -101,7 +101,7 @@
             "target_price": 292.6316,
             "recommendation": "Buy",
             "analyst_count": 19,
-            "inst_pct": 27.3,
+            "inst_pct": 27.4,
             "evaluation": "分析師看好潛在漲幅 33.3%，建議分批買進。",
             "market": "台股"
         },
@@ -114,7 +114,7 @@
             "target_price": 241.44444,
             "recommendation": "Buy",
             "analyst_count": 9,
-            "inst_pct": 25.0,
+            "inst_pct": 24.9,
             "evaluation": "分析師看好潛在漲幅 19.5%，建議分批買進。",
             "market": "台股"
         },
@@ -127,7 +127,7 @@
             "target_price": 191.14285,
             "recommendation": "Buy",
             "analyst_count": 14,
-            "inst_pct": 33.3,
+            "inst_pct": 33.2,
             "evaluation": "分析師看好潛在漲幅 39.5%，建議分批買進。",
             "market": "台股"
         },
@@ -140,7 +140,7 @@
             "target_price": 364.3684,
             "recommendation": "Buy",
             "analyst_count": 19,
-            "inst_pct": 25.8,
+            "inst_pct": 25.9,
             "evaluation": "分析師看好潛在漲幅 16.6%，建議分批買進。",
             "market": "台股"
         }

@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-23 01:51:00",
+    "last_updated": "2026-05-24 01:57:25",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -7,11 +7,11 @@
             "price": 215.33,
             "change": -1.9,
             "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Gra...",
-            "target_price": 278.0251,
+            "target_price": 294.22415,
             "recommendation": "Strong Buy",
-            "analyst_count": 57,
-            "inst_pct": 70.9,
-            "evaluation": "分析師看好潛在漲幅 29.1%，建議分批買進。",
+            "analyst_count": 58,
+            "inst_pct": 70.8,
+            "evaluation": "分析師看好潛在漲幅 36.6%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -23,7 +23,7 @@
             "target_price": 411.8878,
             "recommendation": "Buy",
             "analyst_count": 41,
-            "inst_pct": 45.0,
+            "inst_pct": 44.9,
             "evaluation": "目前價格已高於分析師平均目標價，建議觀望或適度止盈。",
             "market": "美股"
         },
@@ -36,7 +36,7 @@
             "target_price": 380.7857,
             "recommendation": "Strong Buy",
             "analyst_count": 14,
-            "inst_pct": 64.1,
+            "inst_pct": 64.0,
             "evaluation": "分析師看好潛在漲幅 138.2%，建議分批買進。",
             "market": "美股"
         },
@@ -49,7 +49,7 @@
             "target_price": 308.6465,
             "recommendation": "Buy",
             "analyst_count": 43,
-            "inst_pct": 66.0,
+            "inst_pct": 65.8,
             "evaluation": "目前價格已高於分析師平均目標價，建議觀望或適度止盈。",
             "market": "美股"
         },
@@ -62,7 +62,7 @@
             "target_price": 472.16666,
             "recommendation": "Strong Buy",
             "analyst_count": 48,
-            "inst_pct": 72.2,
+            "inst_pct": 72.1,
             "evaluation": "價格接近合理區間，目標價 $472.16666。",
             "market": "美股"
         },
@@ -75,7 +75,7 @@
             "target_price": 231.7168,
             "recommendation": "Buy",
             "analyst_count": 28,
-            "inst_pct": 68.6,
+            "inst_pct": 68.5,
             "evaluation": "分析師看好潛在漲幅 25.3%，建議分批買進。",
             "market": "美股"
         },
@@ -85,11 +85,11 @@
             "price": 2255.0,
             "change": 1.12,
             "summary": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and o...",
-            "target_price": 2578.9697,
+            "target_price": 2589.5757,
             "recommendation": "Strong Buy",
             "analyst_count": 33,
-            "inst_pct": 41.8,
-            "evaluation": "價格接近合理區間，目標價 $2578.9697。",
+            "inst_pct": 43.3,
+            "evaluation": "價格接近合理區間，目標價 $2589.5757。",
             "market": "台股"
         },
         {
@@ -98,11 +98,11 @@
             "price": 250.0,
             "change": 1.01,
             "summary": "Hon Hai Precision Industry Co., Ltd. provides electronic manufacturing services. The company offers consumer electronics, including smartphones, featu...",
-            "target_price": 311.66666,
+            "target_price": 312.77777,
             "recommendation": "Buy",
             "analyst_count": 18,
-            "inst_pct": 27.6,
-            "evaluation": "分析師看好潛在漲幅 24.7%，建議分批買進。",
+            "inst_pct": 28.9,
+            "evaluation": "分析師看好潛在漲幅 25.1%，建議分批買進。",
             "market": "台股"
         },
         {
@@ -111,11 +111,11 @@
             "price": 219.0,
             "change": 3.3,
             "summary": "Evergreen Marine Corporation (Taiwan) Ltd., together with its subsidiaries, engages in the shipping carrier and agency, container terminal operations,...",
-            "target_price": 238.66667,
+            "target_price": 241.88889,
             "recommendation": "Buy",
             "analyst_count": 9,
-            "inst_pct": 26.8,
-            "evaluation": "價格接近合理區間，目標價 $238.66667。",
+            "inst_pct": 27.5,
+            "evaluation": "價格接近合理區間，目標價 $241.88889。",
             "market": "台股"
         },
         {
@@ -127,7 +127,7 @@
             "target_price": 203.06667,
             "recommendation": "Buy",
             "analyst_count": 15,
-            "inst_pct": 34.4,
+            "inst_pct": 35.9,
             "evaluation": "分析師看好潛在漲幅 40.5%，建議分批買進。",
             "market": "台股"
         },
@@ -140,7 +140,7 @@
             "target_price": 387.5263,
             "recommendation": "Buy",
             "analyst_count": 19,
-            "inst_pct": 27.0,
+            "inst_pct": 28.0,
             "evaluation": "分析師看好潛在漲幅 22.6%，建議分批買進。",
             "market": "台股"
         }

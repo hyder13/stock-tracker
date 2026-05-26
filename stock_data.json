@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-25 02:04:06",
+    "last_updated": "2026-05-26 01:55:48",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -7,11 +7,11 @@
             "price": 215.33,
             "change": -1.9,
             "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Gra...",
-            "target_price": 294.22415,
+            "target_price": 295.34482,
             "recommendation": "Strong Buy",
             "analyst_count": 58,
             "inst_pct": 70.8,
-            "evaluation": "分析師看好潛在漲幅 36.6%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 37.2%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -82,8 +82,8 @@
         {
             "symbol": "2330.TW",
             "name": "TAIWAN SEMICONDUCTOR MANUFACTUR",
-            "price": 2305.0,
-            "change": 2.22,
+            "price": 2295.0,
+            "change": -0.65,
             "summary": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and o...",
             "target_price": 2589.5757,
             "recommendation": "Strong Buy",
@@ -95,21 +95,21 @@
         {
             "symbol": "2317.TW",
             "name": "HON HAI PRECISION INDUSTRY",
-            "price": 257.5,
-            "change": 3.0,
+            "price": 260.0,
+            "change": -0.38,
             "summary": "Hon Hai Precision Industry Co., Ltd. provides electronic manufacturing services. The company offers consumer electronics, including smartphones, featu...",
             "target_price": 312.77777,
             "recommendation": "Buy",
             "analyst_count": 18,
             "inst_pct": 28.9,
-            "evaluation": "分析師看好潛在漲幅 21.5%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 20.3%，建議分批買進。",
             "market": "台股"
         },
         {
             "symbol": "2603.TW",
             "name": "EVERGREEN MARINE CORP(TAIWAN)",
-            "price": 219.5,
-            "change": 0.23,
+            "price": 215.5,
+            "change": 0.7,
             "summary": "Evergreen Marine Corporation (Taiwan) Ltd., together with its subsidiaries, engages in the shipping carrier and agency, container terminal operations,...",
             "target_price": 241.88889,
             "recommendation": "Buy",
@@ -121,27 +121,27 @@
         {
             "symbol": "3231.TW",
             "name": "WISTRON CORPORATION",
-            "price": 150.0,
-            "change": 3.81,
+            "price": 146.5,
+            "change": -1.68,
             "summary": "Wistron Corporation, together with its subsidiaries, engages in the design, manufacture, and sale of information technology products in the United Sta...",
             "target_price": 203.06667,
             "recommendation": "Buy",
             "analyst_count": 15,
             "inst_pct": 35.9,
-            "evaluation": "分析師看好潛在漲幅 35.4%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 38.6%，建議分批買進。",
             "market": "台股"
         },
         {
             "symbol": "2382.TW",
             "name": "QUANTA COMPUTER",
-            "price": 324.0,
-            "change": 2.53,
+            "price": 319.5,
+            "change": 0.95,
             "summary": "Quanta Computer Inc. manufactures, processes, and sells laptop computers and telecommunication products in the United States, Mainland China, the Neth...",
             "target_price": 387.5263,
             "recommendation": "Buy",
             "analyst_count": 19,
             "inst_pct": 28.0,
-            "evaluation": "分析師看好潛在漲幅 19.6%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 21.3%，建議分批買進。",
             "market": "台股"
         }
     ]

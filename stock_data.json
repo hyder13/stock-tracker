@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-30 01:52:00",
+    "last_updated": "2026-05-31 02:05:23",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -33,11 +33,11 @@
             "price": 159.09,
             "change": 4.91,
             "summary": "Strategy Inc, together with its subsidiaries, operates as a bitcoin treasury company in the United States, Europe, the Middle East, Africa, and intern...",
-            "target_price": 380.7857,
+            "target_price": 376.85715,
             "recommendation": "Strong Buy",
             "analyst_count": 14,
             "inst_pct": 64.0,
-            "evaluation": "分析師看好潛在漲幅 139.4%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 136.9%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -88,7 +88,7 @@
             "target_price": 2589.5757,
             "recommendation": "Strong Buy",
             "analyst_count": 33,
-            "inst_pct": 43.3,
+            "inst_pct": 43.6,
             "evaluation": "價格接近合理區間，目標價 $2589.5757。",
             "market": "台股"
         },
@@ -101,7 +101,7 @@
             "target_price": 312.77777,
             "recommendation": "Buy",
             "analyst_count": 18,
-            "inst_pct": 28.9,
+            "inst_pct": 29.0,
             "evaluation": "價格接近合理區間，目標價 $312.77777。",
             "market": "台股"
         },

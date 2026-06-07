@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-06 01:54:55",
+    "last_updated": "2026-06-07 02:10:22",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -7,11 +7,11 @@
             "price": 205.1,
             "change": -6.2,
             "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Gra...",
-            "target_price": 298.06897,
+            "target_price": 298.42374,
             "recommendation": "Strong Buy",
-            "analyst_count": 58,
+            "analyst_count": 59,
             "inst_pct": 70.9,
-            "evaluation": "分析師看好潛在漲幅 45.3%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 45.5%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -125,10 +125,10 @@
             "change": -2.84,
             "summary": "Wistron Corporation, together with its subsidiaries, engages in the design, manufacture, and sale of information technology products in the United Sta...",
             "target_price": 203.06667,
-            "recommendation": "Buy",
+            "recommendation": "None",
             "analyst_count": 15,
             "inst_pct": 35.5,
-            "evaluation": "分析師看好潛在漲幅 18.8%，建議分批買進。",
+            "evaluation": "價格接近合理區間，目標價 $203.06667。",
             "market": "台股"
         },
         {

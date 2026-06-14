@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-13 02:03:18",
+    "last_updated": "2026-06-14 02:13:40",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -20,11 +20,11 @@
             "price": 406.43,
             "change": 1.82,
             "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, Chin...",
-            "target_price": 419.93658,
+            "target_price": 420.54633,
             "recommendation": "Buy",
             "analyst_count": 41,
             "inst_pct": 44.9,
-            "evaluation": "價格接近合理區間，目標價 $419.93658。",
+            "evaluation": "價格接近合理區間，目標價 $420.54633。",
             "market": "美股"
         },
         {
@@ -59,7 +59,7 @@
             "price": 511.57,
             "change": 4.73,
             "summary": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally. It operates in three segments: Data Center, Client and Gaming, and E...",
-            "target_price": 483.9375,
+            "target_price": 486.33334,
             "recommendation": "Strong Buy",
             "analyst_count": 48,
             "inst_pct": 72.2,
@@ -114,7 +114,7 @@
             "target_price": 241.88889,
             "recommendation": "Buy",
             "analyst_count": 9,
-            "inst_pct": 27.9,
+            "inst_pct": 27.5,
             "evaluation": "價格接近合理區間，目標價 $241.88889。",
             "market": "台股"
         },
@@ -127,7 +127,7 @@
             "target_price": 203.06667,
             "recommendation": "None",
             "analyst_count": 15,
-            "inst_pct": 35.4,
+            "inst_pct": 35.5,
             "evaluation": "價格接近合理區間，目標價 $203.06667。",
             "market": "台股"
         },

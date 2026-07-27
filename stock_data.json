@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-26 01:26:24",
+    "last_updated": "2026-07-27 01:30:21",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -20,11 +20,11 @@
             "price": 313.03,
             "change": -2.08,
             "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, Chin...",
-            "target_price": 402.76276,
+            "target_price": 401.07275,
             "recommendation": "Buy",
             "analyst_count": 40,
             "inst_pct": 43.6,
-            "evaluation": "分析師看好潛在漲幅 28.7%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 28.1%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -59,11 +59,11 @@
             "price": 521.95,
             "change": -3.29,
             "summary": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally. It operates in three segments: Data Center, Client and Gaming, and E...",
-            "target_price": 570.59576,
+            "target_price": 573.1489,
             "recommendation": "Strong Buy",
             "analyst_count": 47,
             "inst_pct": 74.1,
-            "evaluation": "價格接近合理區間，目標價 $570.59576。",
+            "evaluation": "價格接近合理區間，目標價 $573.1489。",
             "market": "美股"
         },
         {
@@ -82,66 +82,66 @@
         {
             "symbol": "2330.TW",
             "name": "TAIWAN SEMICONDUCTOR MANUFACTUR",
-            "price": 2350.0,
-            "change": -2.29,
+            "price": 2340.0,
+            "change": -0.43,
             "summary": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and o...",
             "target_price": 3106.4058,
             "recommendation": "Strong Buy",
             "analyst_count": 35,
             "inst_pct": 43.7,
-            "evaluation": "分析師看好潛在漲幅 32.2%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 32.8%，建議分批買進。",
             "market": "台股"
         },
         {
             "symbol": "2317.TW",
             "name": "HON HAI PRECISION INDUSTRY",
-            "price": 252.5,
-            "change": -1.94,
+            "price": 251.5,
+            "change": -0.4,
             "summary": "Hon Hai Precision Industry Co., Ltd. provides electronic manufacturing services. The company offers consumer electronics, including smartphones, featu...",
             "target_price": 314.35294,
             "recommendation": "Buy",
             "analyst_count": 17,
             "inst_pct": 29.4,
-            "evaluation": "分析師看好潛在漲幅 24.5%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 25.0%，建議分批買進。",
             "market": "台股"
         },
         {
             "symbol": "2603.TW",
             "name": "EVERGREEN MARINE CORP(TAIWAN)",
-            "price": 206.0,
-            "change": 1.23,
+            "price": 205.5,
+            "change": -0.24,
             "summary": "Evergreen Marine Corporation (Taiwan) Ltd., together with its subsidiaries, engages in the shipping carrier and agency, container terminal operations,...",
             "target_price": 241.66667,
             "recommendation": "Buy",
             "analyst_count": 9,
             "inst_pct": 29.9,
-            "evaluation": "分析師看好潛在漲幅 17.3%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 17.6%，建議分批買進。",
             "market": "台股"
         },
         {
             "symbol": "3231.TW",
             "name": "WISTRON CORPORATION",
-            "price": 179.0,
-            "change": 3.17,
+            "price": 176.0,
+            "change": -1.68,
             "summary": "Wistron Corporation, together with its subsidiaries, engages in the design, manufacture, and sale of information technology products in the United Sta...",
             "target_price": 217.26666,
             "recommendation": "Buy",
             "analyst_count": 15,
             "inst_pct": 33.5,
-            "evaluation": "分析師看好潛在漲幅 21.4%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 23.4%，建議分批買進。",
             "market": "台股"
         },
         {
             "symbol": "2382.TW",
             "name": "QUANTA COMPUTER",
-            "price": 328.0,
-            "change": -2.38,
+            "price": 323.5,
+            "change": -1.37,
             "summary": "Quanta Computer Inc. manufactures, processes, and sells laptop computers and cloud-computing server related products in the United States, Mainland Ch...",
             "target_price": 391.55557,
             "recommendation": "Buy",
             "analyst_count": 18,
             "inst_pct": 30.1,
-            "evaluation": "分析師看好潛在漲幅 19.4%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 21.0%，建議分批買進。",
             "market": "台股"
         }
     ]

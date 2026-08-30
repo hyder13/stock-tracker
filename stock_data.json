@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-08-29 04:30:51",
+    "last_updated": "2026-08-30 01:59:39",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -7,11 +7,11 @@
             "price": 217.55,
             "change": -4.57,
             "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and international...",
-            "target_price": 305.7931,
+            "target_price": 323.41898,
             "recommendation": "Strong Buy",
             "analyst_count": 58,
             "inst_pct": 71.5,
-            "evaluation": "分析師看好潛在漲幅 40.6%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 48.7%，建議分批買進。",
             "market": "美股"
         },
         {

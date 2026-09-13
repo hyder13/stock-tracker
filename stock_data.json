@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-09-12 01:49:25",
+    "last_updated": "2026-09-13 01:40:43",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -7,11 +7,11 @@
             "price": 218.29,
             "change": -0.03,
             "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and international...",
-            "target_price": 327.6544,
+            "target_price": 327.17758,
             "recommendation": "Strong Buy",
-            "analyst_count": 57,
+            "analyst_count": 58,
             "inst_pct": 71.4,
-            "evaluation": "分析師看好潛在漲幅 50.1%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 49.9%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -59,9 +59,9 @@
             "price": 516.13,
             "change": 2.49,
             "summary": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally. It operates in three segments: Data Center, Client and Gaming, and E...",
-            "target_price": 615.3755,
+            "target_price": 615.068,
             "recommendation": "Strong Buy",
-            "analyst_count": 49,
+            "analyst_count": 50,
             "inst_pct": 75.4,
             "evaluation": "分析師看好潛在漲幅 19.2%，建議分批買進。",
             "market": "美股"
@@ -124,11 +124,11 @@
             "price": 185.5,
             "change": 0.27,
             "summary": "Wistron Corporation, together with its subsidiaries, engages in the design, manufacture, and sale of information technology products in the United Sta...",
-            "target_price": 266.52942,
+            "target_price": 268.70587,
             "recommendation": "Strong Buy",
             "analyst_count": 17,
             "inst_pct": 37.6,
-            "evaluation": "分析師看好潛在漲幅 43.7%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 44.9%，建議分批買進。",
             "market": "台股"
         },
         {

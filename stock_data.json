@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-03 02:34:46",
+    "last_updated": "2026-10-04 03:06:15",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -33,11 +33,11 @@
             "price": 160.01,
             "change": -0.31,
             "summary": "Strategy Inc, together with its subsidiaries, operates as a bitcoin treasury company in the United States, Europe, the Middle East, Africa, and intern...",
-            "target_price": 229.86667,
+            "target_price": 236.8,
             "recommendation": "Strong Buy",
             "analyst_count": 15,
             "inst_pct": 60.5,
-            "evaluation": "分析師看好潛在漲幅 43.7%，建議分批買進。",
+            "evaluation": "分析師看好潛在漲幅 48.0%，建議分批買進。",
             "market": "美股"
         },
         {
@@ -72,11 +72,11 @@
             "price": 183.0,
             "change": -3.32,
             "summary": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally. It provides the primary financial account in the c...",
-            "target_price": 207.34688,
+            "target_price": 207.12424,
             "recommendation": "Buy",
-            "analyst_count": 32,
+            "analyst_count": 33,
             "inst_pct": 68.7,
-            "evaluation": "價格接近合理區間，目標價 $207.34688。",
+            "evaluation": "價格接近合理區間，目標價 $207.12424。",
             "market": "美股"
         },
         {
@@ -88,7 +88,7 @@
             "target_price": 3246.5144,
             "recommendation": "Strong Buy",
             "analyst_count": 35,
-            "inst_pct": 43.4,
+            "inst_pct": 43.5,
             "evaluation": "分析師看好潛在漲幅 29.9%，建議分批買進。",
             "market": "台股"
         },
@@ -114,7 +114,7 @@
             "target_price": 245.11111,
             "recommendation": "Hold",
             "analyst_count": 9,
-            "inst_pct": 30.1,
+            "inst_pct": 30.0,
             "evaluation": "價格接近合理區間，目標價 $245.11111。",
             "market": "台股"
         },
@@ -140,7 +140,7 @@
             "target_price": 427.8421,
             "recommendation": "Buy",
             "analyst_count": 19,
-            "inst_pct": 33.3,
+            "inst_pct": 33.4,
             "evaluation": "分析師看好潛在漲幅 28.9%，建議分批買進。",
             "market": "台股"
         }

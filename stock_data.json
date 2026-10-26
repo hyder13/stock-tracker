@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-25 01:58:57",
+    "last_updated": "2026-10-26 02:00:26",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -46,7 +46,7 @@
             "price": 347.725,
             "change": -0.14,
             "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhon...",
-            "target_price": 328.35025,
+            "target_price": 329.24768,
             "recommendation": "Buy",
             "analyst_count": 39,
             "inst_pct": 66.3,

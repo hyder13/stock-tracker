@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-21 04:30:31",
+    "last_updated": "2026-11-22 03:44:31",
     "stocks": [
         {
             "symbol": "NVDA",
@@ -101,7 +101,7 @@
             "target_price": 340.9,
             "recommendation": "Strong Buy",
             "analyst_count": 20,
-            "inst_pct": 32.0,
+            "inst_pct": 31.9,
             "evaluation": "分析師看好潛在漲幅 62.3%，建議分批買進。",
             "market": "台股"
         },
